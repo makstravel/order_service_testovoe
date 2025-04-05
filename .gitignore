@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables
+.env
+*.env
+
+# Editor configs
+.idea/
+.vscode/
+
+# Docker-related files
+*.pid
+docker-compose.override.yml
+
+
+alembic/versions/
+
+*.pgsql
+*.sql
+pgdata/
+postgres_data/
