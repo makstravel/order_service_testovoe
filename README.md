@@ -91,19 +91,40 @@ docker-compose up --build
 ```
 ### 🧪 Полезные команды
 
-**Запустить проект**	docker-compose up --build
+**Запустить проект**	
+```bash
+docker-compose up --build
+```
 
-**Остановить проект**	docker-compose down -v
+**Остановить проект**
+```bash
+docker-compose down -v
+```
 
-**Применить миграции вручную**	docker-compose exec web alembic upgrade head
+**Применить миграции вручную**
+```bash
+docker-compose exec web alembic upgrade head
+```
 
-**Подключиться к Redis CLI**	docker-compose exec redis redis-cli
+**Подключиться к Redis CLI**
+```bash
+docker-compose exec redis redis-cli
+```
 
-**Подключиться к PostgreSQL**	docker-compose exec db psql -U order_user -d order_db
+**Подключиться к PostgreSQL**
+```bash
+docker-compose exec db psql -U order_user -d order_db
+```
 
-**Проверить логи приложения**	docker-compose logs -f web
+**Проверить логи приложения**
+```bash
+docker-compose logs -f web
+```
 
-**Проверить Celery воркера**	docker-compose logs -f celery_worker
+**Проверить Celery воркера**
+```bash
+docker-compose logs -f celery_worker
+```
 
 ### 🧠 Проверка полного цикла
 
