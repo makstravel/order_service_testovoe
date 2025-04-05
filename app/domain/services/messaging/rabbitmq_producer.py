@@ -13,7 +13,6 @@ logger = logging.getLogger(__name__)
 async def publish_new_order_event(order_id: str) -> None:
     """
     Публикует событие 'new_order' в очередь RabbitMQ.
-
     Используется при создании нового заказа для последующей фоновой обработки через Celery.
     """
     try:
